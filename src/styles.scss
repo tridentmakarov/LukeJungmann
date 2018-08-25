@@ -1,0 +1,473 @@
+@import '~@angular/material/theming';
+
+$primary: #1b5e20;
+$primary-light: #4c8c4a;
+$primary-dark: #003300;
+
+$secondary: #ff9100;
+$secondary-light: #ffc246;
+$secondary-dark: #c56200;
+
+@mixin desktop {
+    @media all and (min-width:480px){
+        @content;
+    }
+}
+
+@mixin phone {
+    @media not all and (min-width:480px) {
+        @content;
+    }
+}
+
+body{
+	margin: 0;
+}
+
+.mat-elevation-z0 {
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, .2), 0 0 0 0 rgba(0, 0, 0, .14), 0 0 0 0 rgba(0, 0, 0, .12)
+}
+
+.mat-elevation-z1 {
+	box-shadow: 0 2px 1px -1px rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 1px 3px 0 rgba(0, 0, 0, .12)
+}
+
+.mat-elevation-z2 {
+	box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12)
+}
+
+.mat-elevation-z3 {
+	box-shadow: 0 3px 3px -2px rgba(0, 0, 0, .2), 0 3px 4px 0 rgba(0, 0, 0, .14), 0 1px 8px 0 rgba(0, 0, 0, .12)
+}
+
+.mat-elevation-z4 {
+	box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12)
+}
+
+.mat-elevation-z5 {
+	box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 5px 8px 0 rgba(0, 0, 0, .14), 0 1px 14px 0 rgba(0, 0, 0, .12)
+}
+
+.mat-elevation-z6 {
+	box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12)
+}
+
+.mat-elevation-z7 {
+	box-shadow: 0 4px 5px -2px rgba(0, 0, 0, .2), 0 7px 10px 1px rgba(0, 0, 0, .14), 0 2px 16px 1px rgba(0, 0, 0, .12)
+}
+
+.mat-elevation-z8 {
+	box-shadow: 0 5px 5px -3px rgba(0, 0, 0, .2), 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12)
+}
+
+.mat-elevation-z9 {
+	box-shadow: 0 5px 6px -3px rgba(0, 0, 0, .2), 0 9px 12px 1px rgba(0, 0, 0, .14), 0 3px 16px 2px rgba(0, 0, 0, .12)
+}
+
+.mat-elevation-z10 {
+	box-shadow: 0 6px 6px -3px rgba(0, 0, 0, .2), 0 10px 14px 1px rgba(0, 0, 0, .14), 0 4px 18px 3px rgba(0, 0, 0, .12)
+}
+
+.mat-h1, .mat-headline, .mat-typography h1 {
+	font: 400 24px/32px Roboto, "Helvetica Neue", sans-serif;
+	margin: 0 0 16px
+}
+
+.mat-h2, .mat-title, .mat-typography h2 {
+	font: 500 20px/32px Roboto, "Helvetica Neue", sans-serif;
+	margin: 0 0 16px
+}
+
+.mat-h3, .mat-subheading-2, .mat-typography h3 {
+	font: 400 16px/28px Roboto, "Helvetica Neue", sans-serif;
+	margin: 0 0 16px
+}
+
+.mat-h4, .mat-subheading-1, .mat-typography h4 {
+	font: 400 15px/24px Roboto, "Helvetica Neue", sans-serif;
+	margin: 0 0 16px
+}
+
+.mat-h5, .mat-typography h5 {
+	font: 400 11.62px/20px Roboto, "Helvetica Neue", sans-serif;
+	margin: 0 0 12px
+}
+
+.mat-h6, .mat-typography h6 {
+	font: 400 9.38px/20px Roboto, "Helvetica Neue", sans-serif;
+	margin: 0 0 12px
+}
+
+.mat-body-2, .mat-body-strong {
+	font: 500 14px/24px Roboto, "Helvetica Neue", sans-serif
+}
+
+.mat-body, .mat-body-1, .mat-typography {
+	font: 400 14px/20px Roboto, "Helvetica Neue", sans-serif
+}
+
+.mat-body p, .mat-body-1 p, .mat-typography p {
+	margin: 0 0 12px
+}
+
+.mat-caption, .mat-small {
+	font: 400 12px/20px Roboto, "Helvetica Neue", sans-serif
+}
+
+.mat-display-4, .mat-typography .mat-display-4 {
+	font: 300 112px/112px Roboto, "Helvetica Neue", sans-serif;
+	margin: 0 0 56px;
+	letter-spacing: -.05em
+}
+
+.mat-display-3, .mat-typography .mat-display-3 {
+	font: 400 56px/56px Roboto, "Helvetica Neue", sans-serif;
+	margin: 0 0 64px;
+	letter-spacing: -.02em
+}
+
+.mat-display-2, .mat-typography .mat-display-2 {
+	font: 400 45px/48px Roboto, "Helvetica Neue", sans-serif;
+	margin: 0 0 64px;
+	letter-spacing: -.005em
+}
+
+.mat-display-1, .mat-typography .mat-display-1 {
+	font: 400 34px/40px Roboto, "Helvetica Neue", sans-serif;
+	margin: 0 0 64px
+}
+
+.mat-button, .mat-fab, .mat-flat-button, .mat-icon-button, .mat-mini-fab, .mat-raised-button, .mat-stroked-button {
+	font-family: Roboto, "Helvetica Neue", sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	padding: 0;
+	color: white;
+	background: $primary-dark;
+}
+
+.mat-button-toggle {
+	font-family: Roboto, "Helvetica Neue", sans-serif
+}
+
+.mat-card {
+	font-family: Roboto, "Helvetica Neue", sans-serif
+}
+
+.mat-card-title {
+	font-size: 24px;
+	font-weight: 400
+}
+
+.mat-card-content, .mat-card-header .mat-card-title, .mat-card-subtitle {
+	font-size: 14px
+}
+
+.mat-checkbox {
+	font-family: Roboto, "Helvetica Neue", sans-serif
+}
+
+.mat-checkbox-layout .mat-checkbox-label {
+	line-height: 24px
+}
+
+.mat-chip {
+	font-size: 13px;
+	line-height: 18px
+}
+
+.mat-chip .mat-chip-remove.mat-icon {
+	font-size: 18px
+}
+
+.mat-table {
+	font-family: Roboto, "Helvetica Neue", sans-serif
+}
+
+.mat-header-cell {
+	font-size: 12px;
+	font-weight: 500
+}
+
+.mat-cell {
+	font-size: 14px
+}
+
+.mat-calendar {
+	font-family: Roboto, "Helvetica Neue", sans-serif
+}
+
+.mat-calendar-body {
+	font-size: 13px
+}
+
+.mat-calendar-body-label, .mat-calendar-period-button {
+	font-size: 14px;
+	font-weight: 500
+}
+
+.mat-calendar-table-header th {
+	font-size: 11px;
+	font-weight: 400
+}
+
+.mat-dialog-title {
+	@include desktop {
+		font: 500 20px/32px Roboto, "Helvetica Neue", sans-serif
+    }
+
+    @include phone {
+		font: 500 16px/32px Roboto, "Helvetica Neue", sans-serif
+    }
+
+	
+}
+
+.mat-expansion-panel-header {
+	font-family: Roboto, "Helvetica Neue", sans-serif;
+	font-size: 15px;
+	font-weight: 400
+}
+
+.mat-expansion-panel-content {
+	font: 400 14px/20px Roboto, "Helvetica Neue", sans-serif
+}
+
+.mat-form-field {
+	font-size: inherit;
+	font-weight: 400;
+	line-height: 1.125;
+	font-family: Roboto, "Helvetica Neue", sans-serif
+}
+
+.mat-form-field-wrapper {
+	padding-bottom: 1.25em
+}
+
+.mat-form-field-prefix .mat-icon, .mat-form-field-suffix .mat-icon {
+	font-size: 150%;
+	line-height: 1.125
+}
+
+.mat-form-field-prefix .mat-icon-button, .mat-form-field-suffix .mat-icon-button {
+	height: 1.5em;
+	width: 1.5em
+}
+
+.mat-form-field-prefix .mat-icon-button .mat-icon, .mat-form-field-suffix .mat-icon-button .mat-icon {
+	height: 1.125em;
+	line-height: 1.125
+}
+
+.mat-form-field-infix {
+	padding: .25em 0;
+}
+
+.mat-form-field-can-float .mat-input-server:focus+.mat-form-field-label-wrapper .mat-form-field-label, .mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label {
+	transform: translateY(-1.28125em) scale(.75) perspective(100px) translateZ(.001px);
+	-ms-transform: translateY(-1.28125em) scale(.75);
+	width: 133.33333%
+}
+
+.mat-form-field-can-float .mat-form-field-autofill-control:-webkit-autofill+.mat-form-field-label-wrapper .mat-form-field-label {
+	transform: translateY(-1.28125em) scale(.75) perspective(100px) translateZ(.00101px);
+	-ms-transform: translateY(-1.28124em) scale(.75);
+	width: 133.33334%
+}
+
+.mat-form-field-can-float .mat-input-server[label]:not(:label-shown)+.mat-form-field-label-wrapper .mat-form-field-label {
+	transform: translateY(-1.28125em) scale(.75) perspective(100px) translateZ(.00102px);
+	-ms-transform: translateY(-1.28123em) scale(.75);
+	width: 133.33335%
+}
+
+.mat-form-field-label-wrapper {
+	top: -.84375em;
+	padding-top: .84375em
+}
+
+.mat-form-field-label {
+	top: 1.28125em
+}
+
+.mat-form-field-underline {
+	bottom: 1.25em
+}
+
+.mat-form-field-subscript-wrapper {
+	font-size: 75%;
+	margin-top: .54167em;
+	top: calc(100% - 1.66667em)
+}
+
+.mat-grid-tile-footer, .mat-grid-tile-header {
+	font-size: 14px
+}
+
+.mat-grid-tile-footer .mat-line, .mat-grid-tile-header .mat-line {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: block;
+	box-sizing: border-box
+}
+
+.mat-grid-tile-footer .mat-line:nth-child(n+2), .mat-grid-tile-header .mat-line:nth-child(n+2) {
+	font-size: 12px
+}
+
+input.mat-input-element {
+	margin-top: -.0625em
+}
+
+.mat-menu-item {
+	font-family: Roboto, "Helvetica Neue", sans-serif;
+	font-size: 16px;
+	font-weight: 400
+}
+
+.mat-paginator, .mat-paginator-page-size .mat-select-trigger {
+	font-family: Roboto, "Helvetica Neue", sans-serif;
+	font-size: 12px
+}
+
+.mat-radio-button {
+	font-family: Roboto, "Helvetica Neue", sans-serif
+}
+
+.mat-select {
+	font-family: Roboto, "Helvetica Neue", sans-serif
+}
+
+.mat-select-trigger {
+	height: 1.125em
+}
+
+.mat-sidenav-container {
+	@include desktop {
+		height: calc( 100vh - 64px );
+    }
+
+    @include phone {
+		height: calc( 100vh - 56px );
+    }
+
+    overflow: visible;
+    background: red;
+
+}
+
+#maincontainer {
+	@include desktop {
+		height: calc( 100vh - 64px );
+    }
+
+    @include phone {
+		height: calc( 100vh - 56px );
+    }
+
+	overflow: hidden;
+	width: 100%;
+	display: table;
+	table-layout: fixed;
+}
+
+.mat-slide-toggle-content {
+	font: 400 14px/20px Roboto, "Helvetica Neue", sans-serif
+}
+
+.mat-slider-thumb-label-text {
+	font-family: Roboto, "Helvetica Neue", sans-serif;
+	font-size: 12px;
+	font-weight: 500
+}
+
+.mat-stepper-horizontal, .mat-stepper-vertical {
+	font-family: Roboto, "Helvetica Neue", sans-serif
+}
+
+.mat-step-label {
+	font-size: 14px;
+	font-weight: 400
+}
+
+.mat-step-label-selected {
+	font-size: 14px;
+	font-weight: 500
+}
+
+.mat-tab-group {
+	font-family: Roboto, "Helvetica Neue", sans-serif
+}
+
+.mat-tab-label, .mat-tab-link {
+	font-family: Roboto, "Helvetica Neue", sans-serif;
+	font-size: 14px;
+	font-weight: 500
+}
+
+.mat-toolbar, .mat-toolbar h1 {
+	font: 500 28px Roboto, "Helvetica Neue", sans-serif;
+	margin: 0;
+	background: $primary-dark;
+	color: white;
+}
+
+.mat-toolbar h2 {
+	font: 500 24px Roboto, "Helvetica Neue", sans-serif;
+	margin: 0;
+	background: $primary-dark;
+	color: white;
+}
+
+.mat-toolbar h3, .mat-toolbar h4, .mat-toolbar h5, .mat-toolbar h6 {
+	font: 500 20px Roboto, "Helvetica Neue", sans-serif;
+	margin: 0;
+	background: $primary-dark;
+	color: white;
+}
+
+.mat-tooltip {
+	font-family: Roboto, "Helvetica Neue", sans-serif;
+	font-size: 10px;
+	padding-top: 6px;
+	padding-bottom: 6px
+}
+
+.mat-tooltip-handset {
+	font-size: 14px;
+	padding-top: 9px;
+	padding-bottom: 9px
+}
+
+
+.mat-toolbar{
+	padding: 20px;
+}
+
+mat-icon{
+	padding-top: 6px;
+}
+
+mat-icon:hover {
+	cursor: pointer;
+}
+
+.cdk-overlay-pane {
+	position: absolute;
+}
+
+.cdk-overlay-container {
+	background: $primary-light;
+    border-radius: 10px;
+    position: absolute;
+    top: 80px;
+}
+
+.cdk-overlay-container {
+	position: absolute;
+}
+
+.cdk-live-announcer-element {
+	visibility: hidden;
+}
