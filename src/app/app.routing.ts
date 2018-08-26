@@ -10,14 +10,11 @@ import {
 const routes: Routes = [
 	{
 		path: 'home',
-		component: HomeComponent,
-		children: [
-			{
-				path: 'about',
-				component: AboutComponent,
-			},
-		]
-
+		component: HomeComponent
+	},
+	{
+		path: 'about',
+		component: AboutComponent,
 	},
 	{
 		path: '**',

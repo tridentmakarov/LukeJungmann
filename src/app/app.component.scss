@@ -1,7 +1,7 @@
 @import "../styles.scss";
 .top-bar {
 	height: 80px !important;
-	width: 100vw;
+	max-width: 1100px;
 	overflow: hidden;
 }
 
@@ -15,8 +15,16 @@ h2 {
 }
 
 h3 {
-	padding: 10px 10px;
+	padding: 10px 20px;
 }
 h3:hover{
 	cursor: pointer;
+}
+h1:hover{
+	cursor: pointer;
+}
+
+.limit-width{
+	max-width: 1100px;
+	overflow: auto;
 }

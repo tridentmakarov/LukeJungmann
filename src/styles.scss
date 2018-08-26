@@ -1,8 +1,8 @@
 @import '~@angular/material/theming';
 
-$primary: #1b5e20;
-$primary-light: #4c8c4a;
-$primary-dark: #003300;
+$primary: #00e5ff;
+$primary-light: #6effff;
+$primary-dark: #00b2cc;
 
 $secondary: #ff9100;
 $secondary-light: #ffc246;
@@ -458,10 +458,12 @@ mat-icon:hover {
 }
 
 .cdk-overlay-container {
-	background: $primary-light;
+	background: $primary-dark;
     border-radius: 10px;
     position: absolute;
-    top: 80px;
+    top: 100px;
+    left: 10vw;
+    width: 40vw;
 }
 
 .cdk-overlay-container {
