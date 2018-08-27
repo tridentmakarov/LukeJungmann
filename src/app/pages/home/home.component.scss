@@ -8,7 +8,11 @@
 #top-image {
     background-image: url('./../../../assets/images/poseoutline3.png');
     height: 50vw;
-    width: 100%;
+    width: 110%;
+}
+
+#top-image:hover {
+    // width: 100%;
 }
 
 #pan-image {
