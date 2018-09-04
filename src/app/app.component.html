@@ -1,17 +1,21 @@
-<mat-toolbar class="top-bar">
 
-	<span *ngIf="isMobile" mat-mini-fab class="title-button">
-		<mat-icon>menu</mat-icon>
-	</span>	
+<div class="area" id="toolbarbar">
+	<mat-toolbar class="top-bar shadow-2dp" id="toolbar" [@scrollAnimation]="barSize">
 
-	<h1 routerLink="/">Luke Jungmann</h1>
+		<span *ngIf="isMobile" mat-mini-fab class="title-button">
+			<mat-icon>menu</mat-icon>
+		</span>	
 
-	<span class="fill-remaining-space"></span>
+		<h1 routerLink="/">Luke Jungmann</h1>
 
-	<h3 *ngIf="!isMobile" (click)="openSnackBar()">Skills</h3>
-	<h3 *ngIf="!isMobile" (click)="openSnackBar()">Resume</h3>
-	<h3 *ngIf="!isMobile" routerLink="/about">About Me</h3>
-</mat-toolbar>
+		<span class="fill-remaining-space"></span>
+
+		<h3 *ngIf="!isMobile" routerLink="/">Home</h3>
+		<h3 *ngIf="!isMobile" (click)="openSnackBar()">Skills</h3>
+		<h3 *ngIf="!isMobile" (click)="openSnackBar()">Resume</h3>
+		<h3 *ngIf="!isMobile" routerLink="/about">About</h3>
+	</mat-toolbar>
+</div>
 
 <div class="limit-width">
 	<router-outlet style="height: 100vh; overflow: hidden; max-width: 500px;"> </router-outlet>
