@@ -1,3 +1,5 @@
+
+import {filter} from 'rxjs/operators';
 import { 
 	Component, ElementRef, OnInit, OnDestroy, Input, Output, EventEmitter, AfterViewInit, Inject, HostListener, ChangeDetectorRef, ViewEncapsulation, ViewChild
 } from '@angular/core';
@@ -9,7 +11,7 @@ import * as $ from "jquery";
 
 import { trigger, state, style, animate, transition, group, query, keyframes } from '@angular/animations';
 import { TweenMax, TimelineMax, Linear } from 'gsap';
-import 'rxjs/add/operator/filter';
+
 
 
 import { DOCUMENT } from '@angular/common';
@@ -70,7 +72,7 @@ export class AppComponent implements OnInit, OnDestroy {
 		if (width < 600) {
 			this.isMobile = true;
 		}
-		router.events.filter(event => event instanceof NavigationStart)
+		router.events.pipe(filter(event => event instanceof NavigationStart))
 	    	.subscribe((event) => {
 	    		this.url = event["url"];
 	    		let short = this.url.replace(/\\|\//g,'');
