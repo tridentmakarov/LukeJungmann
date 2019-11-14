@@ -1,0 +1,234 @@
+@import "../../app.component.scss";
+
+.page {
+	// background: white;
+    @include desktop {
+        height: calc(100vh - 88px);
+    }
+    @include phone {
+        height: calc(100vh - 64px);
+    }
+    width: 100%;
+    overflow: hidden;
+}
+
+.options {
+    position: fixed;
+    bottom: 10px;
+    left: 150px;
+}
+
+.hint-click {
+    color: #68a1ff !important;
+    transition: 0.3s ease;
+    cursor: pointer;
+    padding: 0 3px 3px 3px;
+    &:hover {
+        color: white !important;
+        transition: 0.3s ease;
+    }
+}
+
+.mat-drawer-container {
+    @include desktop {
+        height: calc(100vh - 88px);
+    }
+    @include phone {
+        height: calc(100vh - 64px);
+    }
+	background-color: #595959;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.mat-drawer {
+	position: absolute;
+	min-width: 400px;
+    width: 40vw;
+}
+
+.mat-drawer-content {
+	max-width: calc(100vw - 400px);
+    width: 60vw;
+    @include desktop {
+        height: calc(100vh - 88px);
+    }
+    @include phone {
+        height: calc(100vh - 64px);
+    }
+}
+
+p {
+	font-family: Lato;
+}
+
+.mat-stroked-button {
+	color: black;
+}
+
+.mat-form-field-appearance-legacy.mat-form-field-can-float .mat-input-server:focus+.mat-form-field-label-wrapper .mat-form-field-label, .mat-form-field-appearance-legacy.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label {
+	color: white;
+}
+
+.sidebar {
+	// background: #efefef;
+	color: white;
+	background-color: #353535;
+    padding: 20px;
+    @include desktop {
+        height: calc(100vh - 88px);
+    }
+    @include phone {
+        height: calc(100vh - 64px);
+    }
+}
+
+mat-form-field, mat-checkbox {
+	display: block;
+	width: 100%;
+}
+
+mat-checkbox {
+	margin-bottom: 10px;
+}
+
+.button {
+	margin: 3px;
+    color: white;
+}
+
+.create {
+    transition: 0.3s ease;
+    color: white;
+    width: auto;
+    padding: 0px 10px;
+    &:hover {
+        transition: 0.3s ease;
+        // color: #87f2ff;
+        background-color: slategrey;
+    }
+}
+
+.formContainer {
+    display: block;
+    overflow: scroll;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 12px;
+    padding: 8px;
+    margin-bottom: 60px;
+}
+
+.back-button {
+	position: absolute;
+	left: 0;
+	top: 0;
+	float: left; 
+    color: white;
+	min-width: 40px;
+    width: 70px;
+    height: 70px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    border-radius: 0 0 100px 0;
+    transition: 0.2s ease;
+
+    &:hover {
+        transition: 0.2s ease;
+        background: #ffffff3d;
+    }
+}
+
+foreignObject { overflow: visible; }
+
+:host ::ng-deep {
+    display: block;
+    height: inherit;
+    width: inherit;
+
+    .responseContainer {
+
+        border-radius: 12px;
+        height: min-content;
+        width: calc(100% - 4px);
+        max-width: 150px;
+        border-style: solid;
+        border-color: rgba(255, 255, 255, 0);
+        border-width: 2px;
+        display: block;
+        cursor: pointer;
+        background-color: $block-background;
+        color: $main-text;
+        transition: 0.3s ease;
+
+        .response {
+            font-size: 12px;
+            background: #474747;
+            border-radius: 12px;
+            display: flex;
+            padding: 4px 8px;
+        }
+
+        .responseLabel {
+
+        }
+    }
+
+    .cardContainer {
+        margin-top: 12px;
+    	border-radius: 12px;
+        height: auto;
+        width: calc(100% - 4px);
+        max-width: 150px;
+        border-style: solid;
+        border-color: rgba(255, 255, 255, 0);
+        border-width: 2px;
+        display: block;
+        cursor: pointer;
+        background-color: $block-background;
+        color: $main-text;
+        display: grid;
+        transition: 0.3s ease;
+
+        &:hover {
+            // background-color: #424141;
+            transition: 0.3s ease;
+            border-color: rgba(255, 255, 255, 1);
+        }
+
+        &.selected {
+            transition: 0.3s ease;
+            border-color: rgb(111, 166, 255);
+        }
+
+        .name {
+            font-size: 12px;
+            background: #474747;
+    		border-radius: 0 0 9px 9px;
+            display: flex;
+            margin-top: auto;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .main-text {
+        	margin: 8px 4px;
+            pointer-events: none;
+        }
+
+        label {
+            display: block;
+            text-align: center;
+            font-size: 16px;
+        }
+    }
+
+    .linkMidpoint {
+    
+        text {
+			stroke: transparent;
+			fill:white;
+			text-anchor: middle; 
+			font-size: 18px;
+        }
+      }
+}

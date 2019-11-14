@@ -1,0 +1,77 @@
+
+<div id="total" (window:resize)="onResize($event)" *ngIf="false">
+    <div>
+        <!-- <table id="logo-table"> -->
+            <div valign="middle" class="table-rows">
+                <div class="logo-1">
+                    <img class="logo" id='angular' src='./../../../assets/images/Software/angular_logo_mini.png' (click)="onLogoClick($event, 0)">
+                    <img class="logo" id='typescript' src='./../../../assets/images/Software/typescript_logo_mini.png' (click)="onLogoClick($event, 1)">
+                    <img class="logo" id='javascript' src='./../../../assets/images/Software/javascript_logo_mini.png' (click)="onLogoClick($event, 2)">
+                </div>
+                <div class="logo-1">
+                    <img class="logo" id='python' src='./../../../assets/images/Software/python_logo_mini.png' (click)="onLogoClick($event, 3)">
+                    <img class="logo" id='solidworks' src='./../../../assets/images/Software/solidworks_logo_mini.png' (click)="onLogoClick($event, 4)">
+                    <img class="logo" id='matlab' src='./../../../assets/images/Software/matlab_logo_mini.png' (click)="onLogoClick($event, 5)">
+                </div>
+                <div class="logo-text">
+                    <div class="logo-text-1">
+                        <div *ngIf="!prevLogo[0]">
+                            <div class="title">Software Experience</div>
+                        </div>
+                        <div *ngIf="prevLogo[0]=='angular'">
+                            <div class="title">Angular, TypeScript, and Javascript</div>
+                            <span class="description">
+                                Fourteen months of experience working with the company Aerial Applications.
+                                <ul>
+                                    <li>Frontend development of the Aerial Applications web app.</li>
+                                    <li>SCSS/SASS and HTML5 Material Design with a focus on mobile app improvements.</li>
+                                    <li>Significant QA and debugging experience.</li>
+                                </ul>
+                                <!-- <span class="more" routerLink="../skills">Press here to learn more.</span> -->
+                            </span>
+                        </div>
+                        <div *ngIf="prevLogo[0]=='python'">
+                            <div class="title">Python</div>
+                            <span class="description">
+                                One and a half years of experience programming for machine learning and computer vision.
+                                <ul>
+                                    <li>Created face-swapping software using the deep learning package TensorFlow.</li>
+                                    <li>Facial mapping and warping software development.</li>
+                                    <li>Engineering software creation.</li>
+                                </ul>
+                                <!-- <span class="more" routerLink="../skills">Press here to learn more.</span> -->
+                            </span>
+                        </div>
+                        <div *ngIf="prevLogo[0]=='solidworks'">
+                            <div class="title">SolidWorks</div>
+                            <span class="description">
+                                Four plus years of experience working as a student.
+                                <ul>
+                                    <li>Design work for a robotic arm in a Biomedical Engineering class.</li>
+                                    <li>Product design experience creating a functional and reusable cable clip.</li>
+                                </ul>
+                                <!-- <span class="more" routerLink="../skills">Press here to learn more.</span> -->
+                            </span>
+                        </div>  
+                        <div *ngIf="prevLogo[0]=='matlab'">
+                            <div class="title">Matlab</div>
+                            <span class="description">
+                                Four plus years of experience, working as a student, teacher's assistant, programmer for Sandia National Laboratories, and as a graduate student.
+                                <ul>
+                                    <li>Quadrotor programming experience, with stabilized flight control.</li>
+                                    <li>MATLAB GUIDE GUI experience creating an interface for an advanced multi-spectral imaging microscope.</li>
+                                </ul>
+                                <!-- <span class="more" routerLink="../skills">Press here to learn more.</span> -->
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="logo-container">
+                <img *ngIf="hugeLogo" class="logo-huge" id="logo-huge" src={{hugeLogo}}>
+            </div>
+        <!-- </table> -->
+    </div>
+
+    
+</div>

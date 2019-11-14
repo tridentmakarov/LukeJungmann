@@ -1,0 +1,94 @@
+@import "../../../styles.scss";
+
+.contact-container {
+	position: relative;
+	width: min-content;
+    height: min-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    padding: 40px;
+    border-color: #b5ffff;
+    border-radius: 40px;
+    border-style: solid;
+    text-align: center;
+}
+
+.email-container {
+	margin: 10px;
+	border-radius: 8px;
+	display: inline-flex;
+	width: 160px;
+	justify-content: center;
+    padding: 6px;
+    background: #9a9a9a;
+	transition: 0.3s ease;
+	border-style: solid;
+	border-color: rgba(255, 255, 255, 0);
+}
+
+.email-container:hover {
+	transform: scale(1.05);
+}
+
+.email {
+	width: 60px;
+	height: 60px;
+}
+
+.email-icon {
+	font-size: 60px;
+	padding: 0;
+	height: 60px;
+	width: 60px;
+	margin: 0px 26px;
+	color: white;
+}
+
+.linkedin-container {
+	margin: 10px;
+	border-radius: 8px;
+	background: #0274b3;
+	display: flex;
+	@include phone {
+		width: 70vw;
+	}
+	@include desktop {
+		width: 300px;
+	}
+    margin-left: auto;
+    margin-right: auto;
+    // background: white;
+	transition: 0.3s ease;
+	border-style: solid;
+	border-color: rgba(255, 255, 255, 0);
+}
+
+.linkedin-container:hover {
+	transform: scale(1.05);
+}
+
+.linkedin-box {
+	width: 190px;
+    border-radius: 0 20px 20px 0;
+    background: #0274b3;
+    display: inline-flex;
+}
+
+.mat-h4 {
+	text-decoration: none;
+}
+
+.linkedin {
+	margin: auto;
+	border-radius: 8px 0 0 20px;
+	display: flex;
+	width: 110px;
+	height: 60px;
+}
+
+.main-font {
+	color: white;
+	text-decoration: none;
+	margin: auto;
+}

@@ -1,18 +1,12 @@
-<mat-toolbar class="top-bar">
 
-	<span *ngIf="isMobile" mat-mini-fab class="title-button">
-		<mat-icon>menu</mat-icon>
-	</span>	
-
-	<h1 routerLink="/">Luke Jungmann</h1>
-
-	<span class="fill-remaining-space"></span>
-
-	<h3 *ngIf="!isMobile" (click)="openSnackBar()">Skills</h3>
-	<h3 *ngIf="!isMobile" (click)="openSnackBar()">Resume</h3>
-	<h3 *ngIf="!isMobile" routerLink="/about">About Me</h3>
-</mat-toolbar>
-
-<div class="limit-width">
-	<router-outlet style="height: 100vh; overflow: hidden; max-width: 500px;"> </router-outlet>
+<div class="main-page">
+	<app-home-component></app-home-component>
 </div>
+
+<div id="overlay-container" class="overlay-container">
+	<div class="spacer"></div>
+	<div id="router" class="router" [ngClass]="scrollPage ? 'scroll-page' : 'single-page'" [@fadeAnimation]="o.isActivated ? o.activatedRoute : ''">
+		<router-outlet #o="outlet"></router-outlet>
+	</div>
+</div>
+

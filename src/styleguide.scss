@@ -1,0 +1,1924 @@
+
+:root {
+	--Black-700: #252525;
+	--Black-600: #393f49;
+	--Black-500: #636c79;
+	--Black-400: #aeb3b9;
+	--Black-300: #e0e0e0;
+	--Black-200: #eaecef;
+	--Blue-700: #002255;
+	--Blue-600: #012c6c;
+	--Blue-500: #024ec0;
+	--Blue-400: #5588d4;
+	--Blue-300: #cbdaf2;
+	--Blue-200: #f1f6fd;
+	--invalid-name: #e6edf8;
+	--black-700-Opacity: rgba(57, 63, 73, 0.6);
+	--Red: #d70000;
+	--Teal: #00c686;
+}
+
+$accent_blue: #0096ca;
+
+$Black-700: 		#252525;
+$Black-600: 		#393f49;
+$Black-500: 		#636c79;
+$Black-400: 		#aeb3b9;
+$Black-300: 		#dee0e3;
+$Black-200: 		#eaecef;
+$Blue-700: 			#002255;
+$Blue-600: 			#012c6c;
+$Blue-500: 			#024ec0;
+$Blue-400: 			#5588d4;
+$Blue-300: 			#cbdaf2;
+$Blue-200: 			#f1f6fd;
+$invalid-name: 		#e6edf8;
+$black-700-Opacity: rgba(57, 63, 73, 0.6);
+$Red: 				#d70000;
+$Yellow:  			#FFCC00;
+$Teal: 				#00c686;
+
+.H1White {
+	font-family: "Poppins", sans-serif;
+	font-size: 53px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.34;
+	letter-spacing: normal;
+	color: #ffffff;
+}
+.H1Red {
+	font-family: "Poppins", sans-serif;
+	font-size: 53px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.36;
+	letter-spacing: normal;
+	color: $Red;
+}
+.H1Red {
+	font-family: "Poppins", sans-serif;
+	font-size: 53px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.36;
+	letter-spacing: normal;
+	color: $Red;
+}
+.H1Blue600 {
+	font-family: "Poppins", sans-serif;
+	font-size: 53px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.36;
+	letter-spacing: normal;
+	color: $Blue-600;
+}
+.H1Blue500 {
+	font-family: "Poppins", sans-serif;
+	font-size: 53px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.36;
+	letter-spacing: normal;
+	color: $Blue-500;
+}
+.H1Blue400 {
+	font-family: "Poppins", sans-serif;
+	font-size: 53px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.36;
+	letter-spacing: normal;
+	color: $Blue-400;
+}
+.H1Black700 {
+	font-family: "Poppins", sans-serif;
+	font-size: 53px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.36;
+	letter-spacing: normal;
+	color: $Black-700;
+}
+.H1Black500 {
+	font-family: "Poppins", sans-serif;
+	font-size: 53px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.36;
+	letter-spacing: normal;
+	color: $Black-500;
+}
+.H1Black400 {
+	font-family: "Poppins", sans-serif;
+	font-size: 53px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.34;
+	letter-spacing: normal;
+	color: $Black-400;
+}
+.CenterH1Blue500 {
+	font-family: "Poppins", sans-serif;
+	font-size: 53px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.36;
+	letter-spacing: normal;
+	text-align: center;
+	color: $Blue-500;
+}
+.CenterH1Blue500 {
+	font-family: "Poppins", sans-serif;
+	font-size: 53px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.36;
+	letter-spacing: normal;
+	text-align: center;
+	color: $Blue-500;
+}
+.CenterH1Black700 {
+	font-family: "Poppins", sans-serif;
+	font-size: 53px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.36;
+	letter-spacing: normal;
+	text-align: center;
+	color: $Black-700;
+}
+.CenterH1Black700 {
+	font-family: "Poppins", sans-serif;
+	font-size: 53px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.36;
+	letter-spacing: normal;
+	text-align: center;
+	color: $Black-700;
+}
+.H2White {
+	font-family: "Poppins", sans-serif;
+	font-size: 42px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.38;
+	letter-spacing: normal;
+	color: #ffffff;
+}
+.H2Red {
+	font-family: "Poppins", sans-serif;
+	font-size: 42px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.38;
+	letter-spacing: normal;
+	color: $Red;
+}
+.H2Red {
+	font-family: "Poppins", sans-serif;
+	font-size: 42px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.38;
+	letter-spacing: normal;
+	color: $Red;
+}
+.H2Blue600 {
+	font-family: "Poppins", sans-serif;
+	font-size: 42px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.38;
+	letter-spacing: normal;
+	color: $Blue-600;
+}
+.H2Blue500 {
+	font-family: "Poppins", sans-serif;
+	font-size: 42px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.38;
+	letter-spacing: normal;
+	color: $Blue-500;
+}
+.H2Blue400 {
+	font-family: "Poppins", sans-serif;
+	font-size: 42px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.38;
+	letter-spacing: normal;
+	color: $Blue-400;
+}
+.H2Black700 {
+	font-family: "Poppins", sans-serif;
+	font-size: 42px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.38;
+	letter-spacing: normal;
+	color: $Black-700;
+}
+.H2Black500 {
+	font-family: "Poppins", sans-serif;
+	font-size: 42px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.38;
+	letter-spacing: normal;
+	color: $Black-500;
+}
+.H2Black400 {
+	font-family: "Poppins", sans-serif;
+	font-size: 42px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.38;
+	letter-spacing: normal;
+	color: $Black-400;
+}
+.CenterH2Blue500 {
+	font-family: "Poppins", sans-serif;
+	font-size: 42px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.38;
+	letter-spacing: normal;
+	text-align: center;
+	color: $Blue-500;
+}
+.CenterH2Blue500 {
+	font-family: "Poppins", sans-serif;
+	font-size: 42px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.38;
+	letter-spacing: normal;
+	text-align: center;
+	color: $Blue-500;
+}
+.CenterH2Black700 {
+	font-family: "Poppins", sans-serif;
+	font-size: 42px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.38;
+	letter-spacing: normal;
+	text-align: center;
+	color: $Black-700;
+}
+.CenterH2Black700 {
+	font-family: "Poppins", sans-serif;
+	font-size: 42px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.38;
+	letter-spacing: normal;
+	text-align: center;
+	color: $Black-700;
+}
+.H3White {
+	font-family: "Poppins", sans-serif;
+	font-size: 33px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.42;
+	letter-spacing: normal;
+	color: #ffffff;
+}
+.H3Red {
+	font-family: "Poppins", sans-serif;
+	font-size: 33px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.42;
+	letter-spacing: normal;
+	color: $Red;
+}
+.H3Red {
+	font-family: "Poppins", sans-serif;
+	font-size: 33px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.42;
+	letter-spacing: normal;
+	color: $Red;
+}
+.H3Blue600 {
+	font-family: "Poppins", sans-serif;
+	font-size: 33px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.42;
+	letter-spacing: normal;
+	color: $Blue-600;
+}
+.H3Blue500 {
+	font-family: "Poppins", sans-serif;
+	font-size: 33px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.42;
+	letter-spacing: normal;
+	color: $Blue-500;
+}
+.H3Blue400 {
+	font-family: "Poppins", sans-serif;
+	font-size: 33px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.42;
+	letter-spacing: normal;
+	color: $Blue-400;
+}
+.H3Black700 {
+	font-family: "Poppins", sans-serif;
+	font-size: 33px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.42;
+	letter-spacing: normal;
+	color: $Black-700;
+}
+.H3Black500 {
+	font-family: "Poppins", sans-serif;
+	font-size: 33px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.42;
+	letter-spacing: normal;
+	color: $Black-500;
+}
+.H3Black400 {
+	font-family: "Poppins", sans-serif;
+	font-size: 33px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.42;
+	letter-spacing: normal;
+	color: $Black-400;
+}
+.CenterH3Blue500 {
+	font-family: "Poppins", sans-serif;
+	font-size: 33px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.42;
+	letter-spacing: normal;
+	text-align: center;
+	color: $Blue-500;
+}
+.CenterH3Blue500 {
+	font-family: "Poppins", sans-serif;
+	font-size: 33px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.42;
+	letter-spacing: normal;
+	text-align: center;
+	color: $Blue-500;
+}
+.CenterH3Black700 {
+	font-family: "Poppins", sans-serif;
+	font-size: 33px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.42;
+	letter-spacing: normal;
+	text-align: center;
+	color: $Black-700;
+}
+.CenterH3Black700 {
+	font-family: "Poppins", sans-serif;
+	font-size: 33px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.42;
+	letter-spacing: normal;
+	text-align: center;
+	color: $Black-700;
+}
+.H4White {
+	font-family: "Poppins", sans-serif;
+	font-size: 26px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	color: #ffffff;
+}
+.H4White {
+	font-family: "Poppins", sans-serif;
+	font-size: 26px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	color: #ffffff;
+}
+.H4Red {
+	font-family: "Poppins", sans-serif;
+	font-size: 26px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	color: $Red;
+}
+.H4Red {
+	font-family: "Poppins", sans-serif;
+	font-size: 26px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	color: $Red;
+}
+.H4Blue600 {
+	font-family: "Poppins", sans-serif;
+	font-size: 26px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	color: $Blue-600;
+}
+.H4Blue500 {
+	font-family: "Poppins", sans-serif;
+	font-size: 26px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	color: $Blue-500;
+}
+.H4Blue400 {
+	font-family: "Poppins", sans-serif;
+	font-size: 26px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	color: $Blue-400;
+}
+.H4Black700 {
+	font-family: "Poppins", sans-serif;
+	font-size: 26px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	color: $Black-700;
+}
+.H4Black500 {
+	font-family: "Poppins", sans-serif;
+	font-size: 26px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	color: $Black-500;
+}
+.H4Black400 {
+	font-family: "Poppins", sans-serif;
+	font-size: 26px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	color: $Black-400;
+}
+.CenterH4Blue500 {
+	font-family: "Poppins", sans-serif;
+	font-size: 26px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	text-align: center;
+	color: $Blue-500;
+}
+.CenterH4Blue500 {
+	font-family: "Poppins", sans-serif;
+	font-size: 26px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	text-align: center;
+	color: $Blue-500;
+}
+.CenterH4Black700 {
+	font-family: "Poppins", sans-serif;
+	font-size: 26px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	text-align: center;
+	color: $Black-700;
+}
+.CenterH4Black700 {
+	font-family: "Poppins", sans-serif;
+	font-size: 26px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	text-align: center;
+	color: $Black-700;
+}
+.H5White {
+	font-family: "Poppins", sans-serif;
+	font-size: 21px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.52;
+	letter-spacing: normal;
+	color: #ffffff;
+}
+.H5White {
+	font-family: "Poppins", sans-serif;
+	font-size: 21px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.52;
+	letter-spacing: normal;
+	color: #ffffff;
+}
+.H5Red {
+	font-family: "Poppins", sans-serif;
+	font-size: 21px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	color: $Red;
+}
+.H5Red {
+	font-family: "Poppins", sans-serif;
+	font-size: 21px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	color: $Red;
+}
+.H5Blue600 {
+	font-family: "Poppins", sans-serif;
+	font-size: 21px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.52;
+	letter-spacing: normal;
+	color: $Blue-600;
+}
+.H5Blue600 {
+	font-family: "Poppins", sans-serif;
+	font-size: 21px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.52;
+	letter-spacing: normal;
+	color: $Blue-600;
+}
+.H5Blue500 {
+	font-family: "Poppins", sans-serif;
+	font-size: 21px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.43;
+	letter-spacing: normal;
+	color: $Blue-500;
+}
+.H5Blue500 {
+	font-family: "Poppins", sans-serif;
+	font-size: 21px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.43;
+	letter-spacing: normal;
+	color: $Blue-500;
+}
+.H5Blue400 {
+	font-family: "Poppins", sans-serif;
+	font-size: 21px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.38;
+	letter-spacing: normal;
+	color: $Blue-400;
+}
+.H5Blue400 {
+	font-family: "Poppins", sans-serif;
+	font-size: 21px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.38;
+	letter-spacing: normal;
+	color: $Blue-400;
+}
+.H5Black700 {
+	font-family: "Poppins", sans-serif;
+	font-size: 21px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	color: $Black-700;
+}
+.H5Black700 {
+	font-family: "Poppins", sans-serif;
+	font-size: 21px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	color: $Black-700;
+}
+.H5Black500 {
+	font-family: "Poppins", sans-serif;
+	font-size: 21px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	color: $Black-500;
+}
+.H5Black500 {
+	font-family: "Poppins", sans-serif;
+	font-size: 21px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	color: $Black-500;
+}
+.H5Black400 {
+	font-family: "Poppins", sans-serif;
+	font-size: 21px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.52;
+	letter-spacing: normal;
+	color: $Black-400;
+}
+.H5Black400 {
+	font-family: "Poppins", sans-serif;
+	font-size: 21px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.52;
+	letter-spacing: normal;
+	color: $Black-400;
+}
+.H6WhiteSemibold {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: 0.1px;
+	color: #ffffff;
+}
+.H6WhiteSemibold {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: 0.1px;
+	color: #ffffff;
+}
+.H6RedSemibold {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.56;
+	letter-spacing: 0.1px;
+	color: $Red;
+}
+.H6RedSemibold {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.56;
+	letter-spacing: 0.1px;
+	color: $Red;
+}
+.H6Blue600Semibold {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: 0.1px;
+	color: $Blue-600;
+}
+.H6Blue500Semibold {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.56;
+	letter-spacing: 0.1px;
+	color: $Blue-500;
+}
+.H6Blue400Semibold {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: 0.1px;
+	color: $Blue-400;
+}
+.H6Black700Semibold {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.56;
+	letter-spacing: 0.1px;
+	color: $Black-700;
+}
+.H6Black500Semibold {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: 0.1px;
+	color: $Black-500;
+}
+.H6Black400Semibold {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: 0.1px;
+	color: $Black-400;
+}
+.CenterH6WhiteSemibold {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.56;
+	letter-spacing: normal;
+	text-align: center;
+	color: #ffffff;
+}
+.CenterH6WhiteSemibold {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.56;
+	letter-spacing: normal;
+	text-align: center;
+	color: #ffffff;
+}
+.CenterH6Blue500Semibold {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: 0.1px;
+	text-align: center;
+	color: $Blue-500;
+}
+.CenterH6Blue500Semibold {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: 0.1px;
+	text-align: center;
+	color: $Blue-500;
+}
+.CenterH6Black700 {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.56;
+	letter-spacing: 0.1px;
+	text-align: center;
+	color: $Black-700;
+}
+.CenterH6Black700 {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.56;
+	letter-spacing: 0.1px;
+	text-align: center;
+	color: $Black-700;
+}
+.H6WhiteMedium {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	color: #ffffff;
+}
+.H6WhiteMedium {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	color: #ffffff;
+}
+.H6RedMedium {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.56;
+	letter-spacing: normal;
+	color: $Red;
+}
+.H6RedMedium {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.56;
+	letter-spacing: normal;
+	color: $Red;
+}
+.H6Blue600Medium {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	color: $Blue-600;
+}
+.H6Blue600Medium {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	color: $Blue-600;
+}
+.H6Blue500Medium {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.56;
+	letter-spacing: normal;
+	color: $Blue-500;
+}
+.H6Blue500Medium {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.56;
+	letter-spacing: normal;
+	color: $Blue-500;
+}
+.H6Blue400Medium {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.56;
+	letter-spacing: normal;
+	color: $Blue-400;
+}
+.H6Blue400Medium {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.56;
+	letter-spacing: normal;
+	color: $Blue-400;
+}
+.H6Black700Medium {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.56;
+	letter-spacing: normal;
+	color: $Black-700;
+}
+.H6Black700Medium {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.56;
+	letter-spacing: normal;
+	color: $Black-700;
+}
+.H6Black500Medium {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	color: $Black-500;
+}
+.H6Black500Medium {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	color: $Black-500;
+}
+.H6Black400Medium {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.56;
+	letter-spacing: normal;
+	color: $Black-400;
+}
+.H6Black400Medium {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.56;
+	letter-spacing: normal;
+	color: $Black-400;
+}
+.CenterH6WhiteMedium {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.56;
+	letter-spacing: normal;
+	text-align: center;
+	color: #ffffff;
+}
+.CenterH6WhiteMedium {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.56;
+	letter-spacing: normal;
+	text-align: center;
+	color: #ffffff;
+}
+.CenterH6Blue500Medium {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: 0.1px;
+	text-align: center;
+	color: $Blue-500;
+}
+.CenterH6Blue500Medium {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: 0.1px;
+	text-align: center;
+	color: $Blue-500;
+}
+.CenterH6Black700Medium {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.56;
+	letter-spacing: normal;
+	text-align: center;
+	color: $Black-700;
+}
+.CenterH6Black700Medium {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.56;
+	letter-spacing: normal;
+	text-align: center;
+	color: $Black-700;
+}
+.P1White {
+	font-family: "OpenSans", sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.81;
+	letter-spacing: normal;
+	color: #ffffff;
+}
+.P1White {
+	font-family: "OpenSans", sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.81;
+	letter-spacing: normal;
+	color: #ffffff;
+}
+.P1Red {
+	font-family: "OpenSans", sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.81;
+	letter-spacing: normal;
+	color: $Red;
+}
+.P1Red {
+	font-family: "OpenSans", sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.81;
+	letter-spacing: normal;
+	color: $Red;
+}
+.P1Blue600 {
+	font-family: "OpenSans", sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.81;
+	letter-spacing: normal;
+	color: $Blue-600;
+}
+.P1Blue500 {
+	font-family: "OpenSans", sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.81;
+	letter-spacing: normal;
+	color: $Blue-500;
+}
+.P1Blue400 {
+	font-family: "OpenSans", sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.81;
+	letter-spacing: normal;
+	color: $Blue-400;
+}
+.P1Black700 {
+	font-family: "OpenSans", sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.81;
+	letter-spacing: normal;
+	color: $Black-700;
+}
+.P1Black500 {
+	font-family: "OpenSans", sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.81;
+	letter-spacing: normal;
+	color: $Black-500;
+}
+.P1Black400 {
+	font-family: "OpenSans", sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.81;
+	letter-spacing: normal;
+	color: $Black-400;
+}
+.CenterP1Blue500 {
+	font-family: "OpenSans", sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.81;
+	letter-spacing: normal;
+	text-align: center;
+	color: $Blue-500;
+}
+.CenterP1Blue500 {
+	font-family: "OpenSans", sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.81;
+	letter-spacing: normal;
+	text-align: center;
+	color: $Blue-500;
+}
+.CenterP1Black700 {
+	font-family: "OpenSans", sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.81;
+	letter-spacing: normal;
+	text-align: center;
+	color: $Black-700;
+}
+.CenterP1Black700 {
+	font-family: "OpenSans", sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.81;
+	letter-spacing: normal;
+	text-align: center;
+	color: $Black-700;
+}
+.LabelWhiteMedium {
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	color: #ffffff;
+}
+.LabelWhiteMedium {
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	color: #ffffff;
+}
+.LabelRed100Medium {
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	color: $Red;
+}
+.LabelRed100Medium {
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	color: $Red;
+}
+.LabelBlue600Medium {
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	color: $Blue-600;
+}
+.LabelBlue500Medium {
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	color: $Blue-500;
+}
+.LabelBlue400Medium {
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	color: $Blue-400;
+}
+.LabelBlack700Medium {
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	color: $Black-700;
+}
+.LabelBlack500Medium {
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	color: $Black-500;
+}
+.LabelBlack400Medium {
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	color: $Black-400;
+}
+.CenterLabelWhiteMedium {
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.71;
+	letter-spacing: normal;
+	text-align: center;
+	color: #ffffff;
+}
+.CenterLabelWhiteMedium {
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.71;
+	letter-spacing: normal;
+	text-align: center;
+	color: #ffffff;
+}
+.CenterLabelBlue500Medium {
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	text-align: center;
+	color: $Blue-500;
+}
+.CenterLabelBlue500Medium {
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	text-align: center;
+	color: $Blue-500;
+}
+.CenterLabelBlack700Medium {
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	text-align: center;
+	color: $Black-700;
+}
+.CenterLabelBlack700Medium {
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	text-align: center;
+	color: $Black-700;
+}
+.P2White {
+	font-family: "OpenSans", sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.93;
+	letter-spacing: normal;
+	color: #ffffff;
+}
+.P2White {
+	font-family: "OpenSans", sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.93;
+	letter-spacing: normal;
+	color: #ffffff;
+}
+.P2Red {
+	font-family: "OpenSans", sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.93;
+	letter-spacing: normal;
+	color: $Red;
+}
+.P2Red {
+	font-family: "OpenSans", sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.93;
+	letter-spacing: normal;
+	color: $Red;
+}
+.P2Blue600 {
+	font-family: "OpenSans", sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.93;
+	letter-spacing: normal;
+	color: $Blue-600;
+}
+.P2Blue500 {
+	font-family: "OpenSans", sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.93;
+	letter-spacing: normal;
+	color: $Blue-500;
+}
+.P2Blue400 {
+	font-family: "OpenSans", sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.93;
+	letter-spacing: normal;
+	color: $Blue-400;
+}
+.P2Black700 {
+	font-family: "OpenSans", sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.93;
+	letter-spacing: normal;
+	color: $Black-700;
+}
+.P2Black500 {
+	font-family: "OpenSans", sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.93;
+	letter-spacing: normal;
+	color: $Black-500;
+}
+.P2Black400 {
+	font-family: "OpenSans", sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.93;
+	letter-spacing: normal;
+	color: $Black-400;
+}
+.CenterP2Blue500 {
+	font-family: "OpenSans", sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.93;
+	letter-spacing: normal;
+	text-align: center;
+	color: $Blue-500;
+}
+.CenterP2Blue500 {
+	font-family: "OpenSans", sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.93;
+	letter-spacing: normal;
+	text-align: center;
+	color: $Blue-500;
+}
+.CenterP2Black700 {
+	font-family: "OpenSans", sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.93;
+	letter-spacing: normal;
+	text-align: center;
+	color: $Black-700;
+}
+.CenterP2Black700 {
+	font-family: "OpenSans", sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.93;
+	letter-spacing: normal;
+	text-align: center;
+	color: $Black-700;
+}
+.LabelWhiteRegular {
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	color: #ffffff;
+}
+.LabelWhiteRegular {
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	color: #ffffff;
+}
+.LabelRed100Regular {
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	color: $Red;
+}
+.LabelRed100Regular {
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	color: $Red;
+}
+.LabelBlue600Regular {
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	color: $Blue-600;
+}
+.LabelBlue500Regular {
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	color: $Blue-500;
+}
+.LabelBlue400Regular {
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	color: $Blue-400;
+}
+.LabelBlack700Regular {
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	color: $Black-700;
+}
+.LabelBlack500Regular {
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	color: $Black-500;
+}
+.LabelBlack400Regular {
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	color: $Black-400;
+}
+.CenterLabelWhiteRegular {
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.71;
+	letter-spacing: normal;
+	text-align: center;
+	color: #ffffff;
+}
+.CenterLabelWhiteRegular {
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.71;
+	letter-spacing: normal;
+	text-align: center;
+	color: #ffffff;
+}
+.CenterLabelBlue500Regular {
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	text-align: center;
+	color: $Blue-500;
+}
+.CenterLabelBlue500Regular {
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	text-align: center;
+	color: $Blue-500;
+}
+.CenterLabelBlack700Regular {
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	text-align: center;
+	color: $Black-700;
+}
+.CenterLabelBlack700Regular {
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	text-align: center;
+	color: $Black-700;
+}
+.H7White {
+	font-family: "Poppins", sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.67;
+	letter-spacing: 0.8px;
+	color: #ffffff;
+}
+.H7White {
+	font-family: "Poppins", sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.67;
+	letter-spacing: 0.8px;
+	color: #ffffff;
+}
+.H7Red {
+	font-family: "Poppins", sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.67;
+	letter-spacing: 0.8px;
+	color: $Red;
+}
+.H7Red {
+	font-family: "Poppins", sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.67;
+	letter-spacing: 0.8px;
+	color: $Red;
+}
+.H7Blue600 {
+	font-family: "Poppins", sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.67;
+	letter-spacing: 0.8px;
+	color: $Blue-600;
+}
+.H7Blue500 {
+	font-family: "Poppins", sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.67;
+	letter-spacing: 0.8px;
+	color: $Blue-500;
+}
+.H7Blue400 {
+	font-family: "Poppins", sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.67;
+	letter-spacing: 0.8px;
+	color: $Blue-400;
+}
+.H7Black700 {
+	font-family: "Poppins", sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.67;
+	letter-spacing: 0.8px;
+	color: $Black-700;
+}
+.H7Black500 {
+	font-family: "Poppins", sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.67;
+	letter-spacing: 0.8px;
+	color: $Black-500;
+}
+.H7Black400 {
+	font-family: "Poppins", sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.67;
+	letter-spacing: 0.8px;
+	color: $Black-400;
+}
+.CenterH7White {
+	font-family: "Poppins", sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 2.33;
+	letter-spacing: 0.8px;
+	text-align: center;
+	color: #ffffff;
+}
+.CenterH7White {
+	font-family: "Poppins", sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 2.33;
+	letter-spacing: 0.8px;
+	text-align: center;
+	color: #ffffff;
+}
+.CenterH7Blue500 {
+	font-family: "Poppins", sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.67;
+	letter-spacing: 0.8px;
+	text-align: center;
+	color: $Blue-500;
+}
+.CenterH7Blue500 {
+	font-family: "Poppins", sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.67;
+	letter-spacing: 0.8px;
+	text-align: center;
+	color: $Blue-500;
+}
+.CenterH7Black700 {
+	font-family: "Poppins", sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.67;
+	letter-spacing: 0.8px;
+	text-align: center;
+	color: $Black-700;
+}
+.CenterH7Black700 {
+	font-family: "Poppins", sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.67;
+	letter-spacing: 0.8px;
+	text-align: center;
+	color: $Black-700;
+}

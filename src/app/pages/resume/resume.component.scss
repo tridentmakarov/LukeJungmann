@@ -1,0 +1,49 @@
+@import "../../../styles.scss";
+
+.page {
+    display: block;
+}
+
+.resume {
+	margin-left: auto; 
+	margin-right: auto; 
+    min-height: 100vh;
+	width: 100vw;
+	max-width: 1000px;
+	filter: invert(95%);
+}
+
+::ng-deep .textLayer {
+	background: #1f1f1f !important;
+	opacity: 1 !important;
+	color: white !important;
+}
+::ng-deep .textLayer > div {
+	color: white !important;
+}
+::ng-deep .pdfViewer{
+	background: #191919 !important;
+}
+
+a {
+  color: white;
+  text-decoration: none; /* no underline */
+}
+
+button {
+	background: #8b0202;
+	width: 120px;
+}
+
+.button-container {
+	display: flex;
+	position: absolute;
+	z-index: 10000;
+	top: 15vh;
+	@include desktop {
+		left: calc(92vw - 140px);
+	}
+	@include phone {
+		left: calc(100vw - 140px);
+	}
+}

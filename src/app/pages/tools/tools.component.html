@@ -1,0 +1,158 @@
+<div class="main-page">
+	<mat-drawer-container class="example-container">
+		<mat-drawer mode="side" opened class="sidebar">
+			<!-- <ng-container *ngTemplateOutlet="showOptions ? t_options : t_main"></ng-container> -->
+			<!-- <ng-container *ngTemplateOutlet="t_options"></ng-container> -->
+		</mat-drawer>
+		<mat-drawer-content>
+			<ng-container *ngTemplateOutlet="t_graph"></ng-container>
+		</mat-drawer-content>
+	</mat-drawer-container>
+</div>
+
+<ng-template #t_main>
+	<button mat-stroked-button class="back-button" (click)="showOptions = !showOptions">Options</button>
+	<div style="height: auto;">
+	    <h1>Create Conversation</h1>
+	    <span>
+		    <form [formGroup]="dialogFormGroup" class="settings" *ngIf="selectedConversation.id !== undefined">
+		    	<span class="formContainer">
+
+					<mat-form-field>
+						<input matInput type="text" name="character" formControlName="character" placeholder="Character Name">
+					</mat-form-field>
+
+					<mat-form-field>
+						<textarea matInput type="text" name="text" formControlName="text" placeholder="Text"></textarea>
+					</mat-form-field>
+				</span>
+				<span class="formContainer">
+					<ng-container *ngFor="let res of selectedConversation.data.responses; let i = index">
+						<mat-form-field>
+							<textarea matInput type="text" name="response" formControlName="response_{{i}}" placeholder="Response {{i + 1}}"></textarea>
+							<mat-hint align="end" class="hint-click" (click)="setRequirements();">Add Requirement</mat-hint>
+						</mat-form-field>
+					</ng-container>
+			    	<button mat-stroked-button type="button" class="create" (click)="addResponse()">
+			    		Add Response
+			    	</button>
+			    </span>
+			</form>
+			<h3 *ngIf="selectedConversation.id === undefined">Select field on the right to edit</h3>
+		</span>
+
+	</div>
+</ng-template>
+
+<ng-template #t_options>
+	<button mat-stroked-button class="back-button" (click)="showOptions = !showOptions">Back</button>
+    <h1>Options</h1>
+    <form class="settings">
+		<mat-form-field>
+			<mat-select placeholder="Layout" [ngModel]="layout" (ngModelChange)="setLayout($event)" name="layout">
+				<mat-option *ngFor="let l of layouts"  [value]="l.value">
+					{{l.label}}
+				</mat-option>
+			</mat-select>
+		</mat-form-field>
+    	<div>
+			<mat-radio-group 
+				style="display: flex; margin-bottom: 20px;" 
+				aria-label="Select an option" 
+				[ngModel]="curveType"  
+				(ngModelChange)="setInterpolationType($event)" 
+				name="curve">
+				<mat-radio-button 
+					style="margin: auto;"  
+					*ngFor="let curveType of interpolationTypes" 
+					[value]="curveType">{{curveType}}
+				</mat-radio-button>
+			</mat-radio-group>
+		</div>
+
+		<mat-checkbox [(ngModel)]="zoomEnabled" name="zoonEnabled">Enable Zoom</mat-checkbox>
+
+		<mat-form-field>
+			<input matInput type="number" [(ngModel)]="zoomSpeed" name="zoomSpeed" placeholder="Zoom speed" step="0.1">
+		</mat-form-field>
+
+		<mat-form-field>
+			<input matInput type="number" [(ngModel)]="minZoomLevel" name="minZoomLevel" placeholder="Min Zoom Level" min="0" [max]="maxZoomLevel" step="0.1">
+		</mat-form-field>
+
+		<mat-form-field>
+			<input matInput type="number" [(ngModel)]="maxZoomLevel" name="maxZoomLevel" placeholder="Max Zoom Level" [min]="minZoomLevel" step="0.1">
+		</mat-form-field>
+	</form>
+
+    <button mat-stroked-button color="primary" class="button" (click)="update$.next(true)">Update</button>
+    <button mat-stroked-button color="primary" class="button" (click)="center$.next(true)">Center</button>
+    <button mat-stroked-button color="primary" class="button" (click)="zoomToFit$.next(true)">Zoom to fit</button>
+</ng-template>
+
+<ng-template #t_graph>
+	<ngx-graph
+		[links]="links"
+		[nodes]="nodes"
+		[curve]="curve"
+		[layout]="layout"
+		[clusters]="clusters"
+		[nodeWidth]=150
+		[nodeHeight]=100
+		[layoutSettings]="layoutSettings"
+		[curve]="shape.natural"
+		[enableZoom]="zoomEnabled"
+	    [zoomSpeed]="zoomSpeed"
+	    [minZoomLevel]="minZoomLevel"
+	    [maxZoomLevel]="maxZoomLevel"
+		[autoZoom]="true"
+		[update$]="update$">
+
+		<ng-template #defsTemplate>
+			<svg:marker id="arrow" viewBox="0 -5 10 10" refX="8" refY="0" markerWidth="4" markerHeight="4" orient="auto">
+				<svg:path d="M0,-5L10,0L0,5" class="arrow-head" />
+			</svg:marker>
+		</ng-template>
+
+
+
+        <ng-template #clusterTemplate let-cluster>
+			<svg:g class="node cluster">
+				<svg:rect 
+					rx="5" 
+					ry="5" 
+					[attr.width]="cluster.dimension.width" 
+					[attr.height]="cluster.dimension.height" 
+					[attr.fill]="cluster.data.color" />
+			</svg:g>
+        </ng-template>
+
+		<ng-template #nodeTemplate let-node>
+			<svg:g class="node" xmlns="http://www.w3.org/2000/xhtml" width="180" height="100%">
+				<svg:foreignObject width="150" height="1">
+					<xhtml:div *ngIf="node.parentResponse" [ngClass]="(selectedConversation.id==node.id)?'selected':''" class="responseContainer" xmlns="http://www.w3.org/1999/xhtml" (click)=selectConversation(node);>
+						<label class="response">
+							<span class="responseLabel">{{node.parentResponse}}</span>
+						</label>
+					</xhtml:div>
+					<xhtml:div [ngClass]="(selectedConversation.id==node.id)?'selected':''" class="cardContainer" xmlns="http://www.w3.org/1999/xhtml" (click)=selectConversation(node);>
+						<label id="mainText" class="main-text">{{node.data.text}}</label>
+						<label class="name">
+							<span>{{node.label}}</span>
+						</label>
+					</xhtml:div>
+				</svg:foreignObject>
+			</svg:g>
+		</ng-template>
+
+		<ng-template #linkTemplate let-link>
+			<svg:g class="edge">
+				<svg:path class="line" stroke-width="2" marker-end="url(#arrow)">
+				</svg:path>
+				<svg:text class="edge-label" text-anchor="middle">
+					<textPath class="text-path" [attr.href]="'#' + link.id" [style.dominant-baseline]="link.dominantBaseline" startOffset="50%">{{link.label}}</textPath>
+				</svg:text>
+			</svg:g>
+		</ng-template>
+	</ngx-graph>
+</ng-template>

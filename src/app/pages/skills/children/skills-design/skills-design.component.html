@@ -1,0 +1,31 @@
+
+<div fullpage id="fullpage" [options]="config" (ref)="getRef($event)">
+    <div class="section" (click)="fullpage_api.moveSectionDown()">
+        <div class="text">
+            <div class="large-text">TITLE HERE</div>
+            <div class="small-text">TEXT HERE</div>
+        </div>
+        <div class="image">
+            <img class="image-left" id='drone' src='./../../../assets/images/Portfolio/Drone.png'>
+        </div>
+    </div>
+    <div class="section" (click)="fullpage_api.moveSectionDown()">
+        <div class="text">
+            <div class="large-text">TITLE HERE</div>
+            <div class="small-text">TEXT HERE</div>
+        </div>
+        <div class="image">
+            <img class="image-left" id='franken' src='./../../../assets/images/Portfolio/Frankenfingers.png'>
+        </div>
+    </div>
+    <div class="section" (click)="fullpage_api.moveSectionDown()">
+        <div class="image">
+            <img class="image-left" id='kiosk' src='./../../../assets/images/Portfolio/Kiosk1.png'>
+        </div>
+    </div>
+    <div class="section" (click)="fullpage_api.moveSectionDown()">
+        <div class="image">
+            <img class="image-left" id='mug' src='./../../../assets/images/Portfolio/Mug.png'>
+        </div>
+    </div>
+</div>
